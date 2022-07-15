@@ -56,7 +56,7 @@ function getTabellaPersons() {
                                 <td> ${data[i].id} </td>
                                 <td id="${data[i].id}" onclick="deletePerson(this)">
                                     <i class="fa fa-trash text-primary" aria-hidden="true"></i> 
-                                <td id="${data[i].id}" onclick="showModalForEditPerson(this)">
+                                <td id="${data[i].id}" onclick="showModalToEditPerson(this)">
                                     <i class="fa fa-edit text-primary" aria-hidden="true"></i> </td>
                               </tr>`;
             }
@@ -74,7 +74,7 @@ function getTabellaPersons() {
     });
 };
 
-function showModalForEditPerson(id) {
+function showModalToEditPerson(id) {
     nameP = document.createElement("p");
     nameP.style.textAlign = "center";
     nameP.innerText = 'Nome';

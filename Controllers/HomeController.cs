@@ -15,7 +15,7 @@ namespace EsercitazioneChry_Insert_Update_Delete.Controllers
         private readonly ILogger<HomeController> _logger;
         private object repository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger) 
         {
             _logger = logger;
         }
